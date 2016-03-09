@@ -1,0 +1,32 @@
+
+$logo-align: center;
+$background: rgb(15,33,69);
+
+$class-slug: tab !default;
+$tab-color: rgb(249,214,34),rgb(236,30,40),rgb(255,255,255),rgb(27,189,204);
+@for $i from 1 through 4{
+     .#{$class-slug}-#{$i}{
+         background-color:nth($tab-color, $i);
+     }
+}
+   
+       
+.authenticate{
+    background-color: $background;
+}
+.authenticate .center{
+    align-items: $logo-align;
+    justify-content: $logo-align;
+}
+
+.authenticate .full-width{
+    width:100%;
+}
+.authenticate .space-bottom-logo{
+    margin-bottom: 35px;
+}
+.authenticate .space-bottom-input{
+    margin-bottom: 25px;
+}
+
+
